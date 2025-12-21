@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff69b4, #ffb6c1);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+#countdown {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#timer div {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8em;
+  }

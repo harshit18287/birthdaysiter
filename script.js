@@ -1,11 +1,9 @@
-// Set the date we're counting down to (YYYY-MM-DD format)
-const targetDate = new Date('2026-02-05T00:00:00').getTime(); // Replace with her birthday
-
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;
     
     if (distance > 0) {
+        // Countdown still running - calculate and display time
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -36,4 +34,4 @@ function updateCountdown() {
             });
         }, 3000); // Every 3 seconds
     }
-                         }
+                     }// Set the date we're counting down to (YYYY-MM-DD format)

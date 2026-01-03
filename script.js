@@ -6,7 +6,6 @@ function updateCountdown() {
     const distance = targetDate - now;
     
     if (distance > 0) {
-        //Countdown still running - calculate and display time
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -17,24 +16,10 @@ function updateCountdown() {
         document.getElementById('minutes').innerText = minutes;
         document.getElementById('seconds').innerText = seconds;
     } else {
-        // Countdown ended - trigger celebration
         document.getElementById('timer').innerHTML = '<div>Happy Birthday! 🎂</div>';
-        document.getElementById('celebration').style.display = 'block'; // Show the text
-        
-        // Burst confetti/fireworks
-        confetti({
-            particleCount: 200, // Number of particles
-            spread: 70, // Spread angle
-            origin: { y: 0.6 } // Start from middle of screen
-        });
-        
-        // Optional: Repeat bursts every few seconds
-        setInterval(() => {
-            confetti({
-                particleCount: 100,
-                spread: 60,
-                origin: { x: Math.random(), y: Math.random() } // Random bursts
-            });
-        }, 3000); // Every 3 seconds
     }
-                     }// Set the date we're
+}
+
+// Update every second
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call

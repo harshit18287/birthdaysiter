@@ -1,3 +1,6 @@
+// Set the date we're counting down to (YYYY-MM-DD format)
+const targetDate = new Date('2026-01-05T00:00:00').getTime(); // Replace with her birthday
+
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = targetDate - now;

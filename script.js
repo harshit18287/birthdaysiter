@@ -20,6 +20,6 @@ function updateCountdown() {
     }
 }
 
- Update every second
+ //Update every second
 setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call

@@ -1,5 +1,5 @@
 // Set the date we're counting down to (YYYY-MM-DD format)
-const targetDate = new Date('2026-05-01T00:00:00').getTime(); // Replace with her birthday
+const targetDate = new Date('2026-01-05T00:00:00').getTime(); // Replace with her birthday
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -37,4 +37,4 @@ function updateCountdown() {
             });
         }, 3000); // Every 3 seconds
     }
-                     }// Set the date we're counting down to (YYYY-MM-DD format)
+                     }// Set the date we're

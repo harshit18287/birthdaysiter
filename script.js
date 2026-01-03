@@ -3,7 +3,7 @@ function updateCountdown() {
     const distance = targetDate - now;
     
     if (distance > 0) {
-        // Countdown still running - calculate and display time
+        //Countdown still running - calculate and display time
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
